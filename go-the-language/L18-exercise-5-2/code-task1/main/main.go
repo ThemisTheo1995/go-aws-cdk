@@ -1,7 +1,13 @@
-//begin
+// begin
 package main //main/main.go
-import "simple"
+import (
+	"simple"
+	"simple/service"
+)
+
 func main() {
-	simple.Do()
+	service.DoDo()
+	simple.Utils()
 }
+
 //end

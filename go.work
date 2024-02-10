@@ -1,0 +1,7 @@
+go 1.21.4
+
+use (
+   getting_started/functions/first_function
+   go-the-language/L15-exercise-5-1/code-task1
+   go-the-language/L18-exercise-5-2/code-task1
+)

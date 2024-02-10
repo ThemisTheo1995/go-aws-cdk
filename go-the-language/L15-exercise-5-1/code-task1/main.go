@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Entry struct {
 	EventVersion string
@@ -11,7 +13,7 @@ type Entry struct {
 }
 
 type SNS struct {
-	Records []Entry
+	Records []Entry `json:"Records"`
 }
 
 func main() {
@@ -25,4 +27,5 @@ func main() {
 	message.Records[0] = entry
 
 	fmt.Println(message)
+	json.
 }

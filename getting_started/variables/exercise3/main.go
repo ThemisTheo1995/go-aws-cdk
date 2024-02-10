@@ -2,16 +2,15 @@ package main
 
 import "fmt"
 
-var i = 42
+var i = 100
 
 func main() {
-	i := 40
-	for true {
+	i := 200
+	for j := 1; j < 2; j++ {
 		i := 43
 		fmt.Println("Scope for:", i)
 		i = 44
 		fmt.Println("Scope for:", i)
-		break
 	}
 	fmt.Println("Scope main:", i)
 	outer()
