@@ -4,7 +4,8 @@ import "fmt"
 
 func main() {
 	// Explicit variables declaration
-	var varInt = 42
+	var varInt int
+	varInt = 42
 	var varString = "mega"
 	var varFloat = 3.14
 	fmt.Printf("Value Int : %v\n", varInt)

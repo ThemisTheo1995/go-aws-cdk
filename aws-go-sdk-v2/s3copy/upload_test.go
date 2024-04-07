@@ -15,8 +15,8 @@ import (
 func TestUpload(t *testing.T) {
 	mock := func(ctx context.Context, params *s3.PutObjectInput) (*s3.PutObjectOutput, error) {
 		out := &s3.PutObjectOutput{
-			ETag:                   aws.String("\"d41d8cd98f00b204e9800998ecf8427e\""),
-			ServerSideEncryption:    "AES256",
+			ETag:                 aws.String("\"d41d8cd98f00b204e9800998ecf8427e\""),
+			ServerSideEncryption: "AES256",
 		}
 		assert.Equal(t, *params.Bucket, "testb")
 		assert.Equal(t, *params.Key, "testp/test.txt")
@@ -30,7 +30,7 @@ func TestUpload(t *testing.T) {
 	file := "testdata/test.txt"
 	bucket := "testb"
 	prefix := "testp/"
-	err := s3copy.Upload(client,  &file, &bucket, &prefix)
+	err := s3copy.Upload(client, &file, &bucket, &prefix)
 	assert.NilError(t, err, "should give no error")
 
 }

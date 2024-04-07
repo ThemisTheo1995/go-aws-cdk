@@ -3,7 +3,7 @@
 version: '3'
 
 vars:
-  BUCKET: "dateneimer"
+  BUCKET: "go-bucket-123"
   PREFIX: "upload/"
   FILE: "testdata/test.txt"
 

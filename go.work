@@ -4,4 +4,10 @@ use (
    getting_started/functions/first_function
    go-the-language/L15-exercise-5-1/code-task1
    go-the-language/L18-exercise-5-2/code-task1
+   go-the-language/L20-exercise-function-basics/code-task1
+   aws-go-sdk-v2/listbuckets
+   aws-go-sdk-v2/listinstances
+   aws-go-sdk-v2/s3/manyfiles
+   aws-go-sdk-v2/s3copy
+   aws-go-sdk-v2/L29-exercise-list-ec2-instances/code-task2
 )

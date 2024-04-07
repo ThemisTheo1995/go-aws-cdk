@@ -45,7 +45,6 @@ func main() {
 					string(types.InstanceStateNameStopping),
 					string(types.InstanceStateNameStopped),
 					string(types.InstanceStateNameTerminated),
-
 				},
 			},
 		},
@@ -61,14 +60,14 @@ func main() {
 
 	//begin print
 	count := 0
-	for _, reservation :=range result.Reservations{
+	for _, reservation := range result.Reservations {
 		count += len(reservation.Instances)
 	}
 	fmt.Println("Instances: ", count)
 	for _, reservation := range result.Reservations {
 		for k, instance := range reservation.Instances {
 			fmt.Printf("Instance number: %v, ID: %v, Status: %v \n",
-				k,*instance.InstanceId,instance.State.Name,
+				k, *instance.InstanceId, instance.State.Name,
 			)
 		}
 	}

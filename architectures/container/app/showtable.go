@@ -11,15 +11,14 @@ import (
 var ClientDDB *dynamodb.Client
 var ClientSSM *ssm.Client
 
-
-func init(){
+func init() {
 	cfg, err := config.LoadDefaultConfig(context.TODO(), func(lo *config.LoadOptions) error {
-		lo.Region = "eu-central-1"
+		lo.Region = "eu-west-1"
 		return nil
 	})
 	if err != nil {
 		panic("unable to load SDK config, " + err.Error())
 	}
-	ClientDDB = dynamodb.NewFromConfig( cfg)
-	ClientSSM = ssm.NewFromConfig( cfg)
+	ClientDDB = dynamodb.NewFromConfig(cfg)
+	ClientSSM = ssm.NewFromConfig(cfg)
 }

@@ -20,7 +20,7 @@ func main() {
 // be deployed. For more information see: https://docs.aws.amazon.com/cdk/latest/guide/environments.html
 func env() *awscdk.Environment {
 	return &awscdk.Environment{
-		Region:  aws.String("eu-central-1"),
+		Region:  aws.String("eu-west-1"),
 		Account: aws.String(os.Getenv("CDK_DEFAULT_ACCOUNT")),
 	}
 
